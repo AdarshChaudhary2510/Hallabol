@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family:  sans-serif;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-banner {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-banner img {
+    width: 60%;
+    /* max-width: 300px; */
+}
+
+.left-banner button {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    font-size: 18px; 
+} 
+
+
+.right-banner {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.right-banner img {
+    width: 90%;
+}
+
+.section {
+    margin: 50px 100px;
+}
+
+
+.about h2 {
+    font-size: 30px;
+    line-height: 40px; 
+    font-weight: 100;
+    text-align: justify;  /**/
+}
+
+.about-span {
+    color: red;
+}
+
+.powered-by {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.heading h1{
+    text-align: center;
+    border-top: solid 1.5px whitesmoke;
+    border-bottom: solid 1.5px whitesmoke;
+    padding: 20px;
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+.powered-by img{
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    margin:0px 20px;    
+}
+
+.hallabol-video{
+    margin: 100px auto;
+    display: block;
+    width: 80%;
+    box-shadow:  5px 0px 20px 0px rgb(255, 52, 52);
+}
+
+.games{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+.game-item {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.game-item img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-item-caption p {
+    text-align: center;
+    font-size: 26px; 
+    margin-top: 10px;
+    color: purple;
+}
+.blogItem-link{
+    text-decoration: none;
+}
+.image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+.game-item:hover .image-card img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.game-item:hover .game-item-caption p {
+    color: #eb4954;
+}
+
+.sponsors-logo{
+    margin: auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.sponsors-logo img{
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    margin:0px 20px;    
+}
+
+.sponsors-para{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin: 0px 10px;
+}
+
+.sponsors-para p{
+    font-size: 22px;
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+.sponsors-para a{
+    text-decoration: none;
+    color: red;  
+}
+
+
+
+
+.team-heading h3{
+    color: white;
+    font-size: 36px;
+    font-family: 'Jost', sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+.our-team{
+    width: 100%;
+    display: flex;
+    grid-gap: 2rem;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.team-item {
+    min-width: 200px;
+    margin-bottom: 50px;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    border-color:4px soild red;
+}
+.team-item img{
+    width: 100%;
+    border-radius: 20px;
+    border-color:4px soild red;
+    box-shadow:  5px 0px 10px 0px rgb(255, 52, 52);
+}
+.team-item-caption p{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Jost', sans-serif;
+    text-align: justify;
+}
+
+
+
+
+.games-section{
+    margin: 50px 100px;
+}
+.sports-heading h1{
+    text-align: center;
+    font-size: 36px;
+
+}
+.sports-item-heading h2{
+    margin-top: 40px;
+    font-size: 30px;
+}
+.guidlines li{
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+   /* Media quires for responsiveness */
+@media (max-width: 1224px) {
+    .games{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+    
+    .game-item {
+        margin: 10px;
+        overflow: hidden;
+    }
+    
+    .game-item img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+   
+}
+@media (max-width: 1024px) {
+    .left-banner {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .left-banner img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .left-banner button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .right-banner {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .right-banner img {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .section {
+        margin: 10px;
+    }
+
+    .about h2 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .powered-by img {
+        width: 150px;
+    }
+
+    .hallabol-video {
+        margin: 20px auto;
+    }
+
+    .games {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 0.5rem;
+    }
+
+    .game-item-caption p {
+        font-size: 16px;
+    }
+    .sponsors-logo img{
+        width: 150px;
+    }
+
+    .games-section{
+        margin: 20px;
+    }
+    .sports-heading h1{
+        font-size: 25px;
+    
+    }
+    .sports-item-heading h2{
+        font-size: 20px;
+    }
+    .guidlines li{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,74 @@
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    box-shadow: 5px 0px 10px 0px rgb(155, 155, 155);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav img{
+    height: 32px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    color: #fff;
+    margin: 8px 5px;
+    padding: 10px 0px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.nav-link{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    border-radius: 5px;
+}
+.nav-link:hover{
+    background-color: #eb4954;
+    cursor: pointer;
+}
+nav .menu-btn i{
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+}
+#click{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    nav ul li{
+        margin: 8px 5px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+@media (max-width: 768px){
+    nav{
+        padding: 0px 20px;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }   
+}

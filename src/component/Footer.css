@@ -1,0 +1,47 @@
+#footer{
+    text-align: center;
+    border-top: 1px solid rgb(192, 191, 191); 
+    padding-top: 25px;
+}
+.footer-nav{
+	font-size: 16px;
+    padding: 15px;
+    font-family: 'Jost', sans-serif;
+}
+.social-media-handles{
+    display: flex;
+    justify-content: center;
+
+}
+.insta i{
+    border: 3px solid darkmagenta;
+    color: darkmagenta;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+}
+.fb i{
+    border: 3px solid rgb(44, 44, 161);
+    color: rgb(44, 44, 161);
+    padding: 12px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+}
+.youtube i{
+    border: 3px solid red;
+    color: red;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+}
+.linkedin i{
+    border: 3px solid rgb(44, 44, 161);;
+    color: rgb(44, 44, 161);;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+}
